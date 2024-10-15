@@ -16,8 +16,6 @@ const VideoPlayer = () => {
                     </video>
                 </td>
             </tr>
-
-
         </div>
     );
 };
