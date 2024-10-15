@@ -9,13 +9,12 @@ import React from 'react';
 const VideoPlayer = () => {
     return (
         <div>
-            <tr>
-                <td><h2>Prip-720U</h2>
-                    <video width="800" controls>
-                        <source src="" type="video/mp4"/>
-                    </video>
-                </td>
-            </tr>
+            <td>
+                <h2>Prip-720U</h2>
+                <video width="800" controls>
+                    <source src="" type="video/mp4"/>
+                </video>
+            </td>
         </div>
     );
 };
