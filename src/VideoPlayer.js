@@ -8,14 +8,14 @@ import React from 'react';
 // import Sc5 from './google.mp4';
 const VideoPlayer = () => {
     return (
-        <div>
+        <tr>
             <td>
                 <h2>Prip-720U</h2>
                 <video width="800" controls>
                     <source src="" type="video/mp4"/>
                 </video>
             </td>
-        </div>
+        </tr>
     );
 };
 
