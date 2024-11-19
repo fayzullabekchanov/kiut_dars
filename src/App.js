@@ -1,48 +1,14 @@
 
 import React from 'react';
-import VideoPlayer from './VideoPlayer';
+// import VideoPlayer from './VideoPlayer';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-// import G1f from './Word/w4.png';
-// import G2f from './Word/w66.png';
+
 
 import G1f from './Excel/excel5.png';
-// import G1f from './dasturlar/blok.png';
-// import G21f from './Excel/excel1.png';
-// import G22f from './Excel/excel2.png';
-// import G2f from './Excel/excel1.1.png';
-// import G4f from './Excel/excel3.png';
-// import G5 from './Word/diag2.png';
-// import G4f from './Word/table3.png';
-// import G5f from './Word/tableru.png';
-// import G4f from './Word/table1.png';
-// import G5f from './Word/table2.png';
-// import G6f from './Word/table3.png';
-// import G1f from './mushuk_va_sichqon/1.png';
-// import G2f from './mushuk_va_sichqon/2.png';
-import G4 from './Excel/GPA.xlsx';
-// import G4 from './APMS.exe';
 
-// import G1f from './Excel/excel3.png';
-// import G2f from './Excel/excel4.png';
-// import G3f from './Excel/excel1.png';
-// import G31f from './Excel/excel1.1.png';
+// import G4 from './Excel/GPA.xlsx';
 
-
-// import  G1 from './g1/1.jpg'
-// import  G2 from './g1/2.jpg'
-// import  G3 from './g1/4.jpg'
-// import  G4 from './g1/5.jpg'
-// import  G5 from './g1/7.jpg'
-// import  G6 from './g1/8.jpg'
-// import  G7 from './g1/9.jpg'
-// import  G8 from './g1/10.jpg'
-// import  G9 from './g1/11.jpg'
-// import  G10 from './g1/12.gif'
-// import  G11 from './g1/13.gif'
-// import  G12 from './g1/14.gif'
-// import  G13 from './g1/15.jpeg'
-// import  G14 from './g1/16.jpeg'
 
 
 function App() {
