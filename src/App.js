@@ -7,7 +7,7 @@ import './App.css';
 
 import G1f from './Excel/excel5.png';
 
-// import G4 from './Excel/GPA.xlsx';
+
 
 
 
