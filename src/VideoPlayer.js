@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Sc5 from './gpa.mp4';
+import Sc5 from './pstat.mp4';
 const VideoPlayer = () => {
     return (
         <tr>
