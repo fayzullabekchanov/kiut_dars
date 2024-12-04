@@ -10,7 +10,7 @@ function App() {
         <div className="App">
 
 
-            <img src={G1} width={800} alt=" "/>
+            {/*<img src={G1} width={800} alt=" "/>*/}
             {/*<a href={G1} download > <button className="btn btn-success">Download</button></a>*/}
            <br/>
             <h2>Video</h2>
