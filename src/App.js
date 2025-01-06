@@ -1,5 +1,5 @@
 import React from 'react';
-// import VideoPlayer from './VideoPlayer';
+import VideoPlayer from './VideoPlayer';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -12,9 +12,9 @@ function App() {
 
             <img src={G1} width={800} alt=" "/>
             {/*<a href={G1} download > <button className="btn btn-success">Download</button></a>*/}
-           {/*<br/>*/}
-           {/* <h2>Video</h2>*/}
-           {/* <VideoPlayer/>*/}
+           <br/>
+            <h2>Video qo`llanma</h2>
+            <VideoPlayer/>
         </div>
 
     );
