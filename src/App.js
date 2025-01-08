@@ -3,9 +3,9 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-// import G1 from './w3.png'
-import G2 from './excel5.png'
-import G3 from './excel5j.png'
+ import G1 from './w3.png'
+//import G2 from './excel5.png'
+//import G3 from './excel5j.png'
 
 function App() {
     return (
