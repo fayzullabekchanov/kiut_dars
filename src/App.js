@@ -5,23 +5,23 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
  // import G1 from './python-3.12.8-amd64.exe'
  import G1 from './w3.png'
-// import G2 from './excel5.png'
-// import G3 from './excel5j.png'
+import G2 from './excel5.png'
+import G3 from './excel5j.png'
 
 function App() {
     return (
         <div className="App">
 
 
-       <img src={G1} width={800} alt=" "/>
-       {/*     <img src={G2} width={800} alt=" "/>*/}
-       {/*     <br/>*/}
-       {/*     <h2>yechilish ketma ketligi</h2>*/}
-       {/*     <img src={G3} width={800} alt=" "/>*/}
+       {/*<img src={G1} width={800} alt=" "/>*/}
+            <img src={G2} width={800} alt=" "/>
+            <br/>
+            <h2>yechilish ketma ketligi</h2>
+            <img src={G3} width={800} alt=" "/>
        {/*     <a href={G1} download > <button className="btn btn-success">Download</button></a>*/}
             {/*<br/>*/}
-         <h2>Video qo`llanma</h2>
-            <VideoPlayer/>
+         {/*<h2>Video qo`llanma</h2>*/}
+         {/*   <VideoPlayer/>*/}
         </div>
 
     );
