@@ -3,7 +3,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import G1 from './g1/1.jpg'
+import G1 from './db.xlsx'
 
 // import G1 from './g1/1.jpg'
 // import G2 from './g1/2.jpg'
