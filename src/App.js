@@ -1,5 +1,5 @@
 import React from 'react';
-// import VideoPlayer from './VideoPlayer';
+import VideoPlayer from './VideoPlayer';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -28,7 +28,8 @@ function App() {
                <a href={Im4} download > <button className="btn btn-success">Fon2</button></a>
                <a href={Im5} download > <button className="btn btn-success">Fon3</button></a>
                <a href={Im6} download > <button className="btn btn-success">Fon4</button></a>
-{/*<VideoPlayer/>*/}
+            <h1>Video qo`llanma </h1>
+<VideoPlayer/>
              </div>
 
     );
