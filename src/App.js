@@ -9,6 +9,7 @@ import  Im3 from './fon 1.svg'
 import  Im4 from './fon 2.svg'
 import  Im5 from './fon 3.svg'
 import  Im6 from './fon 4.svg'
+import  Im7 from './qr-code.gif'
 
 
 
@@ -29,7 +30,7 @@ function App() {
                <a href={Im5} download > <button className="btn btn-success">Fon3</button></a>
                <a href={Im6} download > <button className="btn btn-success">Fon4</button></a>
             <h1>Video qo`llanma </h1>
-<VideoPlayer/>
+            <img src={Im7} height={800} alt=""/>
              </div>
 
     );
