@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Sc5 from './App.mp4';
+import Sc5 from './APMS.mp4';
 const VideoPlayer = () => {
     return (
         <tr>
