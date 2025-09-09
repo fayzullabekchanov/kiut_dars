@@ -1,5 +1,6 @@
 import React from 'react';
-import VideoPlayer from './VideoPlayer';
+
+import Worddagi from './w3.png'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -11,9 +12,8 @@ function App() {
     return (
         <div className="App">
 
+            <img src={Worddagi} alt=""/>
 
-            <h1>Video qo`llanma </h1>
-          <VideoPlayer/>
              </div>
 
     );
