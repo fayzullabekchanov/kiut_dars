@@ -1,7 +1,6 @@
 import React from 'react';
 
-// import Worddagi1 from './jadval.png'
-// import Worddagi2 from './jadval1.png'
+
 import Worddagi1 from './v2.jpg'
 import Worddagi2 from './v3.jpg'
 import Worddagi3 from './v4.jpg'
