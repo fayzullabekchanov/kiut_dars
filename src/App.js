@@ -16,7 +16,7 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-
+            <h1>Faqat bitta variantini tanlang</h1>
             <img src={Worddagi1} alt=""/>
             ------------------------   ------------------------   ------------------------   ------------------------
             <img src={Worddagi2} alt=""/>
