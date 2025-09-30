@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-import Worddagi1 from './jadval1.png'
+import Worddagi1 from './w3.png'
 
-// import MyVideo from './w13.mp4'
+import MyVideo from './w13.mp4'
 
 //
 // import Worddagi2 from './ram_jadval2.png'
@@ -48,10 +48,10 @@ function App() {
             {/*<br/>*/}
             {/*<br/>*/}
             {/*<a href={MData}>Rasmlarni yuklab oling</a>*/}
-            {/*<video  controls>*/}
-            {/*    <source src={MyVideo} type="video/mp4" />*/}
-            {/*    Your browser does not support the video tag.*/}
-            {/*</video>*/}
+            <video  controls>
+                <source src={MyVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
              </div>
 
     );
