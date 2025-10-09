@@ -13,7 +13,7 @@ import Worddagi5 from './ram_jadval5.png'
 // import Worddagi2 from './v3.jpg'
 // import Worddagi3 from './v4.jpg'
 // import Worddagi4 from './v5.jpg'
-// import MyVideo from './EXCEL_BALL.mp4'
+import MyVideo from './w4.mp4'
 
 import MData from './rasmlar.zip'
 //
@@ -50,13 +50,13 @@ function App() {
             ------------------------------------------------
 
             <a href={MData}>Rasmlarni yuklab oling</a>
+            ------------------------------------------------
+            <video  controls>
+                <source src={MyVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
 
-            {/*<video  controls>*/}
-            {/*    <source src={MyVideo} type="video/mp4" />*/}
-            {/*    Your browser does not support the video tag.*/}
-            {/*</video>*/}
-
-             </div>
+        </div>
 
 
     );
