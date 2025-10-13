@@ -1,24 +1,9 @@
 import React from 'react';
 
 
+
 import Worddagi1 from './excel1.png'
-// import Worddagi1 from './ram_jadval1.png'
 import Worddagi2 from './excel1.1.png'
-// import Worddagi3 from './ram_jadval3.png'
-// import Worddagi4 from './ram_jadval4.png'
-// import Worddagi5 from './ram_jadval5.png'
-
-//
-// import Worddagi1 from './v2.jpg'
-// import Worddagi2 from './v3.jpg'
-// import Worddagi3 from './v4.jpg'
-// import Worddagi4 from './v5.jpg'
-// import MyVideo from './w4.mp4'
-
-// import MData from './rasmlar.zip'
-//
-// import Worddagi1 from './excel1.png'
-// import Worddagi2 from './excel1.1.png'
 
 
 import 'bootstrap/dist/css/bootstrap.css';
