@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-import Worddagi1 from './EXCEL_BALL.png'
+import Worddagi1 from './excel1.png'
 // import Worddagi1 from './ram_jadval1.png'
-// import Worddagi2 from './ram_jadval2.png'
+import Worddagi2 from './excel1.1.png'
 // import Worddagi3 from './ram_jadval3.png'
 // import Worddagi4 from './ram_jadval4.png'
 // import Worddagi5 from './ram_jadval5.png'
@@ -37,7 +37,7 @@ function App() {
             {/*<h1>Faqat bitta variantini tanlang</h1>*/}
             <img src={Worddagi1} alt=""/>
             ------------------------   ------------------------
-            {/*<img src={Worddagi2} alt="" />*/}
+            <img src={Worddagi2} alt="" />
 
             {/*------------------------   ------------------------*/}
             {/*<img src={Worddagi3} alt=""/>*/}
