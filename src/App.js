@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-// import Worddagi1 from './IMG_2644.jpg'
+import Worddagi1 from './excel1.0.png'
 import Worddagi2 from './excel1.png'
 import Worddagi3 from './EXCEL_BALL.png'
 import Worddagi4 from './excel6.png'
@@ -22,8 +22,8 @@ function App() {
 
         <div className="App">
 
-            {/*<img src={Worddagi1}/>*/}
-            {/*----------------------------------------------------------*/}
+            <img src={Worddagi1} width={900}/>
+            ----------------------------------------------------------
 
             <img src={Worddagi2} width={900} />
             ----------------------------------------------------------
