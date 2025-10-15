@@ -6,6 +6,7 @@ import Worddagi1 from './excel1.0.png'
 import Worddagi2 from './excel1.png'
 import Worddagi3 from './EXCEL_BALL.png'
 import Worddagi4 from './excel6.png'
+import MyVideo from './Excel1.mp4'
 
 
 
@@ -22,20 +23,21 @@ function App() {
 
         <div className="App">
 
-            <img src={Worddagi1} width={900}/>
+            <img src={Worddagi2} alt="rasmbor" width={900}/>
             ----------------------------------------------------------
+            <video  controls>
+                <source src={MyVideo}  type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
 
-            <img src={Worddagi2} width={900} />
+            <img src={Worddagi1} alt="rasmbor" width={900} />
             ----------------------------------------------------------
-            <img src={Worddagi3}  width={900} />
+            <img src={Worddagi3}  alt="rasmbor" width={900} />
             ----------------------------------------------------------
-            <img src={Worddagi4}  width={900} />
+            <img src={Worddagi4}  alt="rasmbor" width={900} />
             {/*<a href={MData}>Rasmlarni yuklab oling</a>*/}
             {/*------------------------------------------------*/}
-            {/*<video  controls>*/}
-            {/*    <source src={MyVideo} type="video/mp4" />*/}
-            {/*    Your browser does not support the video tag.*/}
-            {/*</video>*/}
+
 
         </div>
 
