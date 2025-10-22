@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-import Worddagi1 from './excel8.png'
+import Worddagi1 from './excel2.png'
 
 
 
