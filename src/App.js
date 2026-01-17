@@ -6,7 +6,7 @@ import './App.css';
 import Worddagi1 from './1.PNG'
 import Worddagi2 from './2.PNG'
 import Worddagi3 from './3.png'
-import MyVideo from './Forma_MS.mp4'
+
 
 
 
