@@ -5,6 +5,7 @@ import './App.css';
 
 import Worddagi1 from './funksiya.png'
 import Worddagi2 from './f1.png'
+import Worddagi3 from './f2.png'
 
 
 
@@ -23,6 +24,10 @@ function App() {
             <img src={Worddagi1} width={900} alt=""/>
             -------------------------------------------------------
             <img src={Worddagi2} width={900} alt=""/>
+
+            -------------------------------------------------------
+            <img src={Worddagi3} width={900} alt=""/>
+
             {/*<a href={Worddagi1}>Yuklab oling</a>*/}
 
             {/*<video  controls>*/}
