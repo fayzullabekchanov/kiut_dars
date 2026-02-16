@@ -14,9 +14,7 @@ function App() {
         <div className="App">
             <img src={Worddagi1} width={900} alt=""/>
 
-            {/*<img src={Worddagi2} width={900} alt=""/>*/}
-            {/*<img src={Worddagi3} width={900} alt=""/>*/}
-            {/*<img src={Worddagi4} width={900} alt=""/>*/}
+
 
             {/*<video  controls>*/}
             {/*    <source src={MyVideo}  type="video/mp4" />*/}
