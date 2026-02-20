@@ -9,7 +9,6 @@ import Worddagi3 from './t_3.jpg'
 import Worddagi4 from './t_4.jpg'
 import Worddagi5 from './t_5.jpg'
 
-
 function App() {
 
     return (
