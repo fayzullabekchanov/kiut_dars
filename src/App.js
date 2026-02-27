@@ -9,8 +9,8 @@ import './App.css';
 // import Worddagi3 from './obyektivka3.png'
 
 
-import Worddagi1 from './oopt1.jpg'
-import Worddagi2 from './oopt2.jpg'
+import Worddagi1 from './word1.jpg'
+import Worddagi2 from './word2.jpg'
 // import Worddagi2 from './t_2.jpg'
 // import Worddagi3 from './t_3.jpg'
 // import Worddagi4 from './t_4.jpg'
