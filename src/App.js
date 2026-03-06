@@ -3,8 +3,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-import Worddagi3 from './oopt1.jpg'
-import Worddagi4 from './oopt2.jpg'
+import Worddagi3 from './excel1.0.png'
+import Worddagi4 from './excel1.1.jpg'
 
 function App() {
 
