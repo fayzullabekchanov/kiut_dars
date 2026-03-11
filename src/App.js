@@ -10,6 +10,8 @@ function App() {
 
     return (
         <div className="App">
+
+            <a href="https://download-cdn.jetbrains.com/python/pycharm-2025.3.3.exe">PayCharmni o`rnating</a>
             <img src={Worddagi3} alt=""/>
 
         </div>
