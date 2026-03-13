@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-import Worddagi6 from './nazoratishi.png'
+// import Worddagi6 from './nazoratishi.png'
 import Worddagi1 from './excel3_qadam1.png'
 import Worddagi2 from './excel3_qadam2.png'
 import Worddagi3 from './excel3_qadam3.png'
@@ -16,16 +16,16 @@ function App() {
     return (
         <div className="App">
 
-           <h1>Nazorat ishi </h1>
-            <img src={Worddagi6} alt=""/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-            ---------------------------------------------------------
+{/*           <h1>Nazorat ishi </h1>*/}
+{/*            <img src={Worddagi6} alt=""/>*/}
+{/*<br/>*/}
+{/*<br/>*/}
+{/*<br/>*/}
+{/*<br/>*/}
+{/*<br/>*/}
+{/*<br/>*/}
+{/*<br/>*/}
+{/*            ---------------------------------------------------------*/}
  <h1>1-qadam Excelda shu jadvallarni yaratamiz </h1>
             <img src={Worddagi1} alt=""/>
 
