@@ -11,12 +11,7 @@ function App() {
 
     return (
         <div className="App">
-
-
             <img src={Worddagi1} alt=""/>
-
-
-
         </div>
     );
 }
