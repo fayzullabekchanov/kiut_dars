@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-import Worddagi1 from './TRM.png'
+import Worddagi1 from './Fayldan_oqish.jpg'
 
 
 
