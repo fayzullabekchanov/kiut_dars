@@ -11,6 +11,7 @@ function App() {
 
     return (
         <div className="App">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0jdWM_xVZTwqWOIL1tD0YFWzCb7-IodffRRnpoCCCYEkqTg/viewform?usp=publish-editor">tugma</a>
             <img src={Rasm1} width={500} alt=""/>
             <img src={Rasm2} width={500} alt=""/>
             <img src={Rasm3} width={500} alt=""/>
