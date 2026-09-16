@@ -5,11 +5,10 @@ import './App.css';
 
 
 import Rasm1 from './tfw.png';
-// import Rasm1 from './t_1.jpg';
 import Rasm2 from './tfw_rus.jpg';
-// import Rasm3 from './t_3.jpg';
-// import Rasm4 from './t_4.jpg';
-// import Rasm5 from './t_5.jpg';
+import Rasm3 from './word1.jpg';
+import Rasm4 from './word2.jpg';
+
 
 function App() {
 
@@ -17,11 +16,34 @@ function App() {
         <div className="App">
             <a href={Rasm1}>Uzbek</a>
             <a href={Rasm2}>Rus tili</a>
-            {/*<img src={Rasm1} width={500} alt=""/>*/}
-            {/*<img src={Rasm2} width={500} alt=""/>*/}
-            {/*<img src={Rasm3} width={500} alt=""/>*/}
-            {/*<img src={Rasm4} width={500} alt=""/>*/}
-            {/*<img src={Rasm5} width={500} alt=""/>*/}
+            <a
+                href={`${Rasm3}`}
+                onClick={(e) => {
+                    e.preventDefault();
+
+                    const yangiOyna = window.open('', '_blank');
+
+                    yangiOyna.document.write(`
+    <html>
+    <body style="
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    ">
+        <img src="${Rasm3}" style="max-width:80%; max-height:80vh;">
+        <img src="${Rasm4}" style="max-width:80%; max-height:80vh;">
+    </body>
+    </html>
+`);
+                }}
+            >
+                IST-901U
+            </a>
+
         </div>
     );
 }
