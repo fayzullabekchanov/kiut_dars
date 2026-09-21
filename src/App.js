@@ -7,6 +7,8 @@ import Rasm1 from './tfw.png';
 import Rasm2 from './tfw_rus.jpg';
 import Rasm3 from './word1.jpg';
 import Rasm4 from './word2.jpg';
+import Rasm5 from './Formulalar.jpg';
+
 
 import Table1 from './t_1.jpg';
 import Table2 from './t_2.jpg';
@@ -28,7 +30,7 @@ function App() {
             </a>
 
             <a
-                href={Rasm3}
+                href={Table1}
                 target="_blank"
                 rel="noreferrer"
                 onClick={(e) => {
@@ -41,7 +43,7 @@ function App() {
                         <html lang="uz">
                         <head>
                             <meta charset="UTF-8">
-                            <title>Shapes</title>
+                            <title>Table</title>
                         </head>
 
                         <body style="
@@ -165,6 +167,53 @@ function App() {
                 }}
             >
                 Shapes
+            </a>
+
+            <a
+                href={Rasm5}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+
+                    const yangiOyna = window.open('', '_blank');
+
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>Formulalar</title>
+                        </head>
+
+                        <body style="
+                            margin: 0;
+                            min-height: 100vh;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 20px;
+                        ">
+
+                            <img 
+                                src="${Rasm5}" 
+                                alt="IST-901U - Topshiriq 1"
+                                style="
+                                    max-width: 80%;
+                                    max-height: 80vh;
+                                    object-fit: contain;
+                                "
+                            >                          
+
+                        </body>
+                        </html>
+                    `);
+
+                    yangiOyna.document.close();
+                }}
+            >
+                Formulalar
             </a>
 
         </div>
