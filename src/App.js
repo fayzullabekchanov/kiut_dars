@@ -26,6 +26,9 @@ import TableImages3 from './ram_jadval3.png';
 import TableImages4 from './ram_jadval4.png';
 import TableImages5 from './ram_jadval5.png';
 
+import WordNazorat1 from './WordSmartArt_Page_1.jpg';
+import WordNazorat2 from './WordSmartArt_Page_2.jpg';
+
 
 
 function App() {
@@ -162,6 +165,50 @@ function App() {
                 }}
             >
                 Table
+            </a>
+            <a
+                href={WordNazorat1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+
+                    const yangiOyna = window.open('', '_blank');
+
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title>  SmartArt</title>
+                        </head>
+                                               
+                           
+                           
+                        <body style="
+                            margin: 0;
+                            min-height: 100vh;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 20px;
+                        ">
+
+                            <img  src="${WordNazorat1}"   alt="Topshiriq" >    
+                            <img  src="${WordNazorat2}"   alt="Topshiriq" >    
+                        
+                            
+                                                   
+
+                        </body>
+                        </html>
+                    `);
+
+                    yangiOyna.document.close();
+                }}
+            >
+                SmartArt
             </a>
             <a
                 href={Rasm3}
@@ -351,7 +398,7 @@ function App() {
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
-                            /*gap: 20px;*/
+                            gap: 20px;
                         ">
 
                             <img  src="${TableImages1}"   alt="Topshiriq" >    
@@ -371,6 +418,8 @@ function App() {
             >
                 Table Images
             </a>
+
+
 
 
         </div>
