@@ -37,6 +37,9 @@ import WordMundarija7 from './Mundarija/7.jpg';
 import WordMundarija8 from './Mundarija/8.jpg';
 import WordMundarija9 from './Mundarija/9.jpg';
 
+import ExcelMum1 from './excel1.0.png';
+import ExcelMum2 from './excel1.1.jpg';
+
 function App() {
     const images = [
         WordMundarija1,
@@ -276,6 +279,32 @@ function App() {
                 }}
             >
                 Avtomatik mundarija yaratish
+            </a>
+            <a
+                href={TableImages1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel sum, Max, Min</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExcelMum1}" alt="Topshiriq">    
+                            <img src="${ExcelMum2}" alt="Topshiriq">    
+                            
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+               Excel sum, Max, Min
             </a>
         </div>
     );
