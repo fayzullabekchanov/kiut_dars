@@ -40,6 +40,13 @@ import WordMundarija9 from './Mundarija/9.jpg';
 import ExcelMum1 from './excel1.0.png';
 import ExcelMum2 from './excel1.1.jpg';
 
+import ExcelFoiz1 from './ExcelFoiz1.png';
+import ExcelFoiz2 from './ExcelFoiz2.png';
+import ExcelFoiz3 from './ExcelFoizN.png';
+
+
+
+
 function App() {
     const images = [
         WordMundarija1,
@@ -305,6 +312,32 @@ function App() {
                 }}
             >
                Excel sum, Max, Min
+            </a>
+            <a
+                href={ExcelFoiz3}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel Foiz</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExcelFoiz1}" alt="Topshiriq">    
+                            <img src="${ExcelFoiz2}" alt="Topshiriq">    
+                            <img src="${ExcelFoiz3}" alt="Topshiriq">                                
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excel Foiz, absalyut belgisi
             </a>
         </div>
     );
