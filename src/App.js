@@ -44,6 +44,10 @@ import ExcelFoiz1 from './ExcelFoiz1.png';
 import ExcelFoiz2 from './ExcelFoiz2.png';
 import ExcelFoiz3 from './ExcelFoizN.png';
 
+import ExcelFormula1 from './ExcelSum.png';
+
+import ExcelMasala1 from './Excel2_ombor.jpg';
+
 
 
 
@@ -338,6 +342,56 @@ function App() {
                 }}
             >
                 Excel Foiz, absalyut belgisi
+            </a>
+            <a
+                href={ExcelFoiz3}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel Formula</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExcelFormula1}" alt="Topshiriq">    
+                                                           
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excel Formula
+            </a>
+            <a
+                href={ExcelMasala1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel Formula</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExcelMasala1}" alt="Topshiriq">    
+                                                           
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excel mustaqil ishlash uchun
             </a>
         </div>
     );
