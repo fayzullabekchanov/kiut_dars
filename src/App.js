@@ -48,6 +48,10 @@ import ExcelFormula1 from './ExcelSum.png';
 
 import ExcelMasala1 from './Excel2_ombor.jpg';
 
+import ExcelIf1 from './EXCEL_BALL.png';
+
+import ExceGPA1 from './excelSumProductIf1.png';
+
 
 
 
@@ -392,6 +396,56 @@ function App() {
                 }}
             >
                 Excel mustaqil ishlash uchun
+            </a>
+            <a
+                href={ExcelIf1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel IF</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExcelIf1}" alt="Topshiriq">    
+                                                           
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excel shartga tekshirish(if)
+            </a>
+            <a
+                href={ExceGPA1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel GPA</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExceGPA1}" alt="Topshiriq">    
+                                                           
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excel GPA
             </a>
         </div>
     );
