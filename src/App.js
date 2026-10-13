@@ -52,6 +52,9 @@ import ExcelIf1 from './EXCEL_BALL.png';
 
 import ExceGPA1 from './excelSumProductIf1.png';
 
+import ExceFiltirlash1 from './Excel_subtotal1.png';
+import ExceFiltirlash2 from './Excel_subtotal2.jpg';
+
 
 
 
@@ -446,6 +449,33 @@ function App() {
                 }}
             >
                 Excel GPA
+            </a>
+
+            <a
+                href={ExceFiltirlash1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel Filtirlash</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExceFiltirlash1}" alt="Topshiriq">    
+                            <img src="${ExceFiltirlash2}" alt="Topshiriq">    
+                                                           
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excelda matematik ma’lumotlarni saralash, filtrlash
             </a>
         </div>
     );
