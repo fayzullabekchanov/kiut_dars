@@ -524,7 +524,8 @@ function App() {
                             <title> Excel Diagramma, random </title>
                         </head>
                         <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
-                            <img src="${ExceMustaqil1}" alt="Topshiriq">    
+                            <img src="${ExcelDiagram1}" alt="Topshiriq">    
+                            <img src="${ExcelDiagram2}" alt="Topshiriq">    
                                                                                   
                         </body>
                         </html>
