@@ -61,6 +61,9 @@ import ExcelDiagram2 from './diagrammadinamik2.png';
 
 import ExceMustaqil1 from './excel3.png';
 
+import ExcelText1 from './excelText1.png';
+import ExcelText2 from './excelText2.png';
+
 
 
 
@@ -509,6 +512,34 @@ function App() {
             >
                 Excelda Mustaqil yechish
             </a>
+
+            <a
+                href={ExceMustaqil1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel if</title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExcelText1}" alt="Topshiriq">    
+                            <img src="${ExcelText2}" alt="Topshiriq">    
+                                                                                  
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excelda Shart, Matn sanashlar bilan ishlash
+            </a>
+
             <a
                 href={ExcelDiagram1}
                 target="_blank"
