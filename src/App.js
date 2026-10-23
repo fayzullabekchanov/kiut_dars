@@ -64,6 +64,9 @@ import ExceMustaqil1 from './excel3.png';
 import ExcelText1 from './excelText1.png';
 import ExcelText2 from './excelText2.png';
 
+import ExcelDiagramUzb1 from './ExcelDiagramUzb1.jpg';
+import ExcelDiagramUzb2 from './ExcelDiagramRus1.jpg';
+
 
 
 
@@ -565,6 +568,34 @@ function App() {
                 }}
             >
                 Excel Diagramma, random, VLOOKUP, ro`yxat
+            </a>
+
+
+            <a
+                href={ExcelDiagram1}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const yangiOyna = window.open('', '_blank');
+                    yangiOyna.document.write(`
+                        <!DOCTYPE html>
+                        <html lang="uz">
+                        <head>
+                            <meta charset="UTF-8">
+                            <title> Excel Diagramma, random </title>
+                        </head>
+                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+                            <img src="${ExcelDiagramUzb1}" alt="Topshiriq">    
+                            <img src="${ExcelDiagramUzb2}" alt="Topshiriq">    
+                                                                                  
+                        </body>
+                        </html>
+                    `);
+                    yangiOyna.document.close();
+                }}
+            >
+                Excel Diagramma Mustaqil bajarish
             </a>
 
 
