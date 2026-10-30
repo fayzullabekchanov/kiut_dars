@@ -2,97 +2,52 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import MSExcel from './msexcel/MsExcel';
-import MsWord from "./msword/MsWord";
-import MsPowerpoint from "./mspowerpoint/MsPowerpoint";
+import MsWord from './msword/MsWord';
+import MsPowerpoint from './mspowerpoint/MsPowerpoint';
+import MSaccess from "./msaccess/MSaccess";
+
+const VIEWS = {
+    home: null,
+    excel: MSExcel,
+    word: MsWord,
+    powerpoint: MsPowerpoint,
+    msaccess:MSaccess,
+};
+
+const BTN_STYLE = { width: '400px', padding: '12px 20px', fontSize: '16px', fontWeight: '500' };
+
+const MENU_ITEMS = [
+    { view: 'word',        label: 'Word',       cls: 'btn-info'   },
+    { view: 'excel',       label: 'Excel',      cls: 'btn-info'  },
+    { view: 'powerpoint',  label: 'PowerPoint', cls: 'btn-info'      },
+    { view: 'msaccess',  label: 'MS Access', cls: 'btn-info'      },
+];
 
 function App() {
-    // Qaysi sahifa ochiqligini saqlash uchun state ('home', 'excel', 'word')
     const [view, setView] = useState('home');
-    const buttonStyle = {
-        width: '400px', // Barcha tugmalar bir xil enkor bo'ladi
-        padding: '12px 20px',
-        fontSize: '16px',
-        fontWeight: '500'
-    };
+    const ActiveComponent = VIEWS[view];
+
     return (
         <div className="App container mt-5">
-            {/* 1. Asosiy menyu (Home) */}
-            {view === 'home' && (
+            {view === 'home' ? (
                 <div className="d-flex flex-column gap-3 align-items-center">
-                    <a
-                        href="#word"
-                        className="btn btn-primary"
-                        style={buttonStyle}
-                        onClick={(e) => {
-                            e.preventDefault();
-                            setView('word');
-                        }}
-                    >
-                        Word
-                    </a>
-                    <a
-                        href="#excel"
-                        className="btn btn-success"
-                        style={buttonStyle}
-                        onClick={(e) => {
-                            e.preventDefault();
-                            setView('excel');
-                        }}
-                    >
-                        Excel
-                    </a>
-                    <a
-                        href="#powerpoint"
-                        className="btn btn-info"
-                        style={buttonStyle}
-                        onClick={(e) => {
-                            e.preventDefault();
-                            setView('powerpoint');
-                        }}
-                    >
-                        PowerPoint
-                    </a>
+                    {MENU_ITEMS.map(({ view: v, label, cls }) => (
+                        <button
+                            key={v}
+                            className={`btn ${cls}`}
+                            style={BTN_STYLE}
+                            onClick={() => setView(v)}
+                        >
+                            {label}
+                        </button>
+                    ))}
                 </div>
-            )}
-
-            {/* 2. Excel sahifasi */}
-            {view === 'excel' && (
+            ) : (
                 <div>
-                    <button
-                        className="btn btn-secondary mb-3"
-                        style={buttonStyle}
-                        onClick={() => setView('home')}
-                    >
+                    <button className="btn btn-secondary mb-3" style={BTN_STYLE} onClick={() => setView('home')}>
                         Orqaga qaytish
                     </button>
-                    <MSExcel />
-                </div>
-            )}
-
-            {/* 3. Word sahifasi */}
-            {view === 'word' && (
-                <div>
-                    <button
-                        className="btn btn-secondary mb-3"
-                        style={buttonStyle}
-                        onClick={() => setView('home')}
-                    >
-                        Orqaga qaytish
-                    </button>
-                    <MsWord />
-                </div>
-            )}
-            {/* 4. PowerPoint sahifasi */}
-            {view === 'powerpoint' && (
-                <div>
-                    <button
-                        className="btn btn-secondary mb-3"
-                        style={buttonStyle}
-                        onClick={() => setView('home')}
-                    >
-                        Orqaga qaytish
-                    </button>
-                    <MsPowerpoint />
+                    {ActiveComponent && <ActiveComponent />}
                 </div>
             )}
         </div>

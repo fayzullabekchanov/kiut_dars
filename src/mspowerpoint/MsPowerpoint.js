@@ -1,60 +1,28 @@
 import React from 'react';
-
-import Infografika from './statisv.jpg';
+import { openViewer } from '../utils/openViewer';
 
 import Taqdimot1 from './Taqdimot1.pptx';
 
-
+const TOPICS = [
+    // Infografika hozircha comment qilingan — qoldirildi
+    // { label: 'Infografika', title: 'Infografika', images: [Infografika] },
+];
 
 function MSPowerpoint() {
     return (
-        <div className="App">
-            {/*<a*/}
-            {/*    href={Infografika}*/}
-            {/*    target="_blank"*/}
-            {/*    rel="noreferrer"*/}
-            {/*    onClick={(e) => {*/}
-            {/*        e.preventDefault();*/}
-            {/*        const yangiOyna = window.open('', '_blank');*/}
-            {/*        yangiOyna.document.write(`*/}
-            {/*            <!DOCTYPE html>*/}
-            {/*            <html lang="uz">*/}
-            {/*            <head>*/}
-            {/*                <meta charset="UTF-8">*/}
-            {/*                <title> Infografika</title>*/}
-            {/*            </head>*/}
-            {/*            <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">*/}
-            {/*                <img src="${Infografika}" alt="Topshiriq">*/}
-            {/*            </body>*/}
-            {/*            </html>*/}
-            {/*        `);*/}
-            {/*        yangiOyna.document.close();*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*    Infografika*/}
-            {/*</a>*/}
-            <a
-                href={Taqdimot1}
-                target="_blank"
-                rel="noreferrer"
-                onClick={(e) => {
-                    e.preventDefault();
-                    const yangiOyna = window.open('', '_blank');
-                    yangiOyna.document.write(`
-                        <!DOCTYPE html>
-                        <html lang="uz">
-                        <head>
-                            <meta charset="UTF-8">
-                            <title> powerpoint1</title>
-                        </head>
-                        <body style="margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
-                            <img src="${Infografika}" alt="Topshiriq">
-                        </body>
-                        </html>
-                    `);
-                    yangiOyna.document.close();
-                }}
-            >
+        <div className="d-flex flex-column gap-2 p-3">
+            {TOPICS.map(({ label, title, images }) => (
+                <button
+                    key={label}
+                    className="btn btn-outline-info text-start"
+                    onClick={() => openViewer(title, images)}
+                >
+                    {label}
+                </button>
+            ))}
+
+            {/* PPTX yuklab olish — openViewer bu yerda ishlamaydi, to'g'ridan-to'g'ri link */}
+            <a href={Taqdimot1} download className="btn btn-outline-info text-start">
                 PowerPoint namuna 1 yuklab ol
             </a>
         </div>
