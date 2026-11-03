@@ -3,7 +3,7 @@ import { openViewer } from '../utils/openViewer';
 
 import Taqdimot1 from './Taqdimot1.pptx';
 import Taqdimot2 from './photo.zip';
-import Taqdimot3 from './ish2.pdf';
+
 
 const TOPICS = [
     // Infografika hozircha comment qilingan — qoldirildi
