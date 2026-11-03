@@ -29,23 +29,11 @@ function MSPowerpoint() {
                 PowerPoint namuna 1 yuklab ol
             </a>
             <a href={Taqdimot2} download className="btn btn-outline-info text-start">
-                PowerPoint rasmlarni yuklab ol
+                PowerPoint topshiriq va rasmlarni yuklab ol
             </a>
-            {/* PDF ko'rish tugmasi */}
-            <button
-                className="btn btn-outline-success text-start"
-                onClick={() => setShowPdf(prev => !prev)}
-            >
-                {showPdf ? 'PDFni yopish' : 'Topshiriqni ko\'rish (PDF)'}
-            </button>
 
-            {showPdf && (
-                <iframe
-                    src={Taqdimot3}
-                    title="Laboratoriya topshirig'i"
-                    style={{ width: '100%', height: '80vh', border: '1px solid #ccc', borderRadius: 8 }}
-                />
-            )}
+
+
         </div>
     );
 }
