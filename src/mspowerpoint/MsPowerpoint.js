@@ -11,7 +11,7 @@ const TOPICS = [
 ];
 
 function MSPowerpoint() {
-    const [showPdf, setShowPdf] = React.useState(false);
+
     return (
         <div className="d-flex flex-column gap-2 p-3">
             {TOPICS.map(({ label, title, images }) => (
@@ -29,7 +29,7 @@ function MSPowerpoint() {
                 PowerPoint namuna 1 yuklab ol
             </a>
             <a href={Taqdimot2} download className="btn btn-outline-info text-start">
-                PowerPoint topshiriq va rasmlarni yuklab ol
+                PowerPoint topshiriq va rasmlarni yuklab oling
             </a>
 
 
