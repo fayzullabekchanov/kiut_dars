@@ -2,6 +2,7 @@ import React from 'react';
 import { openViewer } from '../utils/openViewer';
 
 import Taqdimot1 from './Taqdimot1.pptx';
+import Taqdimot2 from './photo.zip';
 
 const TOPICS = [
     // Infografika hozircha comment qilingan — qoldirildi
@@ -24,6 +25,9 @@ function MSPowerpoint() {
             {/* PPTX yuklab olish — openViewer bu yerda ishlamaydi, to'g'ridan-to'g'ri link */}
             <a href={Taqdimot1} download className="btn btn-outline-info text-start">
                 PowerPoint namuna 1 yuklab ol
+            </a>
+            <a href={Taqdimot2} download className="btn btn-outline-info text-start">
+                PowerPoint rasmlarni yuklab ol
             </a>
         </div>
     );
