@@ -3,6 +3,7 @@ import { openViewer } from '../utils/openViewer';
 
 import Taqdimot1 from './Taqdimot1.pptx';
 import Taqdimot2 from './photo.zip';
+import Taqdimot3 from './kiut.zip';
 
 
 const TOPICS = [
@@ -27,6 +28,10 @@ function MSPowerpoint() {
             {/* PPTX yuklab olish — openViewer bu yerda ishlamaydi, to'g'ridan-to'g'ri link */}
             <a href={Taqdimot1} download className="btn btn-outline-info text-start">
                 PowerPoint namuna 1 yuklab ol
+            </a>
+
+            <a href={Taqdimot3} download className="btn btn-outline-info text-start">
+                PowerPoint. Kelajagingni yarat (Создайте своё будущее).
             </a>
             <a href={Taqdimot2} download className="btn btn-outline-info text-start">
                 PowerPoint topshiriq va rasmlarni yuklab oling
