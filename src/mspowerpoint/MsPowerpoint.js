@@ -4,6 +4,7 @@ import { openViewer } from '../utils/openViewer';
 import Taqdimot1 from './Taqdimot1.pptx';
 import Taqdimot2 from './photo.zip';
 import Taqdimot3 from './kiut.zip';
+import Taqdimot4 from './SlideEconomy.zip';
 
 
 const TOPICS = [
@@ -35,6 +36,9 @@ function MSPowerpoint() {
             </a>
             <a href={Taqdimot2} download className="btn btn-outline-info text-start">
                 PowerPoint topshiriq va rasmlarni yuklab oling
+            </a>
+            <a href={Taqdimot4} download className="btn btn-outline-info text-start">
+                PowerPoint topshiriq(the economy) yuklab oling
             </a>
 
 
