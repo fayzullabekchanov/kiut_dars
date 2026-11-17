@@ -5,6 +5,7 @@ import MSExcel from './msexcel/MsExcel';
 import MsWord from './msword/MsWord';
 import MsPowerpoint from './mspowerpoint/MsPowerpoint';
 import MSaccess from "./msaccess/MSaccess";
+import Academwriting from "./academwriting/Academwriting";
 
 const VIEWS = {
     home: null,
@@ -12,6 +13,7 @@ const VIEWS = {
     word: MsWord,
     powerpoint: MsPowerpoint,
     msaccess:MSaccess,
+    academwriting:Academwriting,
 };
 
 const BTN_STYLE = { width: '400px', padding: '12px 20px', fontSize: '16px', fontWeight: '500' };
@@ -21,6 +23,7 @@ const MENU_ITEMS = [
     { view: 'excel',       label: 'Excel',      cls: 'btn-info'  },
     { view: 'powerpoint',  label: 'PowerPoint', cls: 'btn-info'      },
     { view: 'msaccess',  label: 'MS Access', cls: 'btn-info'      },
+    { view: 'academwriting',  label: 'Academ writing', cls: 'btn-info'      },
 ];
 
 function App() {
