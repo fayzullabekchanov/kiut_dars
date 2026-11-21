@@ -1,12 +1,6 @@
 import React from 'react';
 import { openViewer } from '../utils/openViewer';
 
-import Taqdimot1 from './Taqdimot1.pptx';
-import Taqdimot2 from './photo.zip';
-import Taqdimot3 from './kiut.zip';
-import Taqdimot4 from './SlideEconomy.zip';
-
-
 const TOPICS = [
     // Infografika hozircha comment qilingan — qoldirildi
     // { label: 'Infografika', title: 'Infografika', images: [Infografika] },
@@ -27,17 +21,20 @@ function MSPowerpoint() {
             ))}
 
             {/* PPTX yuklab olish — openViewer bu yerda ishlamaydi, to'g'ridan-to'g'ri link */}
-            <a href={Taqdimot1} download className="btn btn-outline-info text-start">
+            <a href="https://github.com/fayzullabekchanov/kiut_dars/releases/download/1.0/Taqdimot1.pptx" download className="btn btn-outline-info text-start">
                 PowerPoint namuna 1 yuklab ol
             </a>
 
-            <a href={Taqdimot3} download className="btn btn-outline-info text-start">
+            <a href="https://github.com/fayzullabekchanov/kiut_dars/releases/download/1.0/kiut.zip" download className="btn btn-outline-info text-start">
                 PowerPoint. Kelajagingni yarat (Создайте своё будущее).
             </a>
-            <a href={Taqdimot2} download className="btn btn-outline-info text-start">
+            <a href="https://github.com/fayzullabekchanov/kiut_dars/releases/download/1.0/photo.zip" download className="btn btn-outline-info text-start">
                 PowerPoint topshiriq va rasmlarni yuklab oling
             </a>
-            <a href={Taqdimot4} download className="btn btn-outline-info text-start">
+            <a
+                href="https://github.com/fayzullabekchanov/kiut_dars/releases/download/1.0/SlideEconomy.zip"
+                className="btn btn-outline-info text-start"
+            >
                 PowerPoint topshiriq(the economy) yuklab oling
             </a>
 
