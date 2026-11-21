@@ -29,7 +29,7 @@ function MSPowerpoint() {
                 PowerPoint. Kelajagingni yarat (Создайте своё будущее).
             </a>
             <a href="https://github.com/fayzullabekchanov/kiut_dars/releases/download/1.0/photo.zip" download className="btn btn-outline-info text-start">
-                PowerPoint topshiriq va rasmlarni yuklab oling
+                PowerPoint topshiriq yuklab oling
             </a>
             <a
                 href="https://github.com/fayzullabekchanov/kiut_dars/releases/download/1.0/SlideEconomy.zip"
