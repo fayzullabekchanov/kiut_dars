@@ -6,6 +6,7 @@ import MsWord from './msword/MsWord';
 import MsPowerpoint from './mspowerpoint/MsPowerpoint';
 import MSaccess from "./msaccess/MSaccess";
 import Academwriting from "./academwriting/Academwriting";
+import Infografika from "./infografika/Infografika";
 
 const VIEWS = {
     home: null,
@@ -14,6 +15,7 @@ const VIEWS = {
     powerpoint: MsPowerpoint,
     msaccess:MSaccess,
     academwriting:Academwriting,
+    infografika:Infografika
 };
 
 const BTN_STYLE = { width: '400px', padding: '12px 20px', fontSize: '16px', fontWeight: '500' };
@@ -24,6 +26,7 @@ const MENU_ITEMS = [
     { view: 'powerpoint',  label: 'PowerPoint', cls: 'btn-info'      },
     { view: 'msaccess',  label: 'MS Access', cls: 'btn-info'      },
     { view: 'academwriting',  label: 'Academ writing', cls: 'btn-info'      },
+    { view: 'infografika',  label: 'Infografika', cls: 'btn-info'      },
 ];
 
 function App() {
